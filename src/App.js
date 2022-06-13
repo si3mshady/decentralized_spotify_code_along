@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Album from './pages/Album';
 import './App.css';
 import { Layout } from 'antd';
-import Elogo from './images/e.jpeg'
+import Elogo from './images/et.png'
 import {
  SearchOutlined, DownCircleOutlined
 } from '@ant-design/icons';

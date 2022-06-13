@@ -7,8 +7,10 @@
 
 .mainLogo {
     border-radius: 50%;
-  filter: drop-shadow(16px 16px 20px red) invert(75%);
-  transform: rotate(180deg);
+    width: 200px;
+    height: 200px;
+  filter: drop-shadow(1px 1px 20px red) invert(5%);
+  /* transform: rotate(180deg); */
 }
 .ant-layout-sider {
     background-image: linear-gradient(#1e2422, #000000);
