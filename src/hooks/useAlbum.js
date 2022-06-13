@@ -5,7 +5,7 @@ export const useAlbum = (contract) => {
   const { token } = useMoralisWeb3Api();
   const { isInitialized } = useMoralis();
 
-  const [album, setAlbum] = useState();
+  const [albumDetails, setAlbum] = useState();
 
   useEffect(() => {
     if (isInitialized) {
@@ -16,14 +16,16 @@ export const useAlbum = (contract) => {
   }, [isInitialized, contract]);
 
   const fetchAlbum = async () => {
-      console.log('Inside USE ALBUM HOOK')
+     
     return await token
       .getAllTokenIds({
         address: contract,
         chain: "mumbai"
       })
-      .then((result) => result);
+      .then((result) => result
+      
+      );
   };
 
-  return { fetchAlbum, album };
+  return { fetchAlbum, albumDetails };
 };
